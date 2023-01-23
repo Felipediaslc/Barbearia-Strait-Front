@@ -32,7 +32,7 @@ const CadastroAdm = ({ id = "mod", onClose = () => {}, children }) => {
       senhaAdm: senhaAdm,
     };
     const responst = await axios.post(
-      "http://localhost:3001/adms",
+      "http://localhost:7855/adms",
       administrador
     );
     console.log(responst);
