@@ -47,7 +47,7 @@ function Servicos() {
         </div>
         <div className="card-content">
             <ul>
-                <li><i className="fa fa-check-circle"></i>Unlimited Website</li>
+                <li><i className="fa fa-check-circle"></i>Reparos</li>
                 <li><i ></i></li>
                 <li><i ></i></li>
                 <li><i ></i></li>
