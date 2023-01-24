@@ -24,7 +24,7 @@ const Cadastro = ( ) => {
       email: email,
       senha:senha
     }
-    const retorno = await axios.post('http://localhost:7855/usuarios', usuario)
+    const retorno = await axios.post('https://strait-back-integrador.herokuapp.com/usuarios', usuario)
     console.log(retorno)
     if (retorno.status === 200) {
       navigate("/login");

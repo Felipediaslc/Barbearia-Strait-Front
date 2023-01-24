@@ -32,7 +32,7 @@ const CadastroAdm = ({ id = "mod", onClose = () => {}, children }) => {
       senhaAdm: senhaAdm,
     };
     const responst = await axios.post(
-      "http://localhost:7855/adms",
+      "https://strait-back-integrador.herokuapp.com/adms",
       administrador
     );
     console.log(responst);

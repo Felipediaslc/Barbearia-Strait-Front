@@ -25,7 +25,7 @@ const Agenda = () => {
       formPague: formPague,
     };
     const respon = await axios.post(
-      "http://localhost:3001/agendamentos",
+      "https://strait-back-integrador.herokuapp.com/agendamentos",
       agendar
     );
 

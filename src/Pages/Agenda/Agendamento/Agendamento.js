@@ -11,7 +11,7 @@ const Agendamento = (props) => {
     const loadClients = async () => {
       try {
         setLoading(true);
-        const responded = await axios.get("http://localhost:7855/agendamentos");
+        const responded = await axios.get("https://strait-back-integrador.herokuapp.com/agendamentos");
         setClients(responded.data);
       } catch (e) {
         console.log(e);
