@@ -87,7 +87,7 @@ const Agenda = () => {
       </header>
       <div className="container-agend">
         <form className="agendament">
-          <h2>Felipe Dias</h2>
+          <h2>Agendament</h2>
 
           <div className="dat">
             <input
