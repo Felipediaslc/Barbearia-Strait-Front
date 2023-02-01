@@ -60,7 +60,7 @@
 
 .nome01 input {
   width: 24vw;
-  height: 5vh;
+  height: 6.5vh;
   border-radius: 25rem;
   border: none;
   outline: none;
@@ -83,12 +83,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 9.1rem;
+  margin-top: 8.7rem;
   float: left;
 }
 .senha03 input {
   width: 24vw;
-  height: 5vh;
+  height: 6.5vh;
   font-size: 1.1rem;
   background-color: rgba(255, 255, 255, 0.7);
   font-weight: bold;
@@ -121,8 +121,8 @@
 .ui-button-login {
   position: absolute;
   background-color: #ed8c1a;
-  width: 10.5vw;
-  height: 5vh;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  height: 6.5vh;
   margin-top: 17rem;
   margin-left: 0.4rem;
   border: 1px solid transparent;
