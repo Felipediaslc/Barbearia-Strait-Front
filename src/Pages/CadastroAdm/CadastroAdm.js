@@ -153,7 +153,7 @@ const CadastroAdm = ({ id = "mod", onClose = () => {}, children }) => {
         </div>
         <div className="adm-senha01">
           <input
-            type="text"
+            type="password"
             name="senha"
             placeholder="Senha"
             value={senhaAdm}
@@ -162,7 +162,7 @@ const CadastroAdm = ({ id = "mod", onClose = () => {}, children }) => {
           />
         </div>
         <div className="adm-senha02">
-          <input placeholder="Confirmar" type="text" required />
+          <input placeholder="Confirmar" type="password" required />
         </div>
 
         <button
