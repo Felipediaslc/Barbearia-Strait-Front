@@ -87,7 +87,7 @@ const notify = () => toast("Cadastro realizado !");
         required />      
 </div>
 <div className="senha01">                 
-<input  type="text"
+<input  type="password"
         name="senha"
         placeholder="Senha"
         value={senha}
@@ -95,7 +95,7 @@ const notify = () => toast("Cadastro realizado !");
         required />
 </div>
 <div className="senha02">
-<input placeholder="Confirmar"  type="text" required />            
+<input placeholder="Confirmar"  type="password" required />            
 </div>
 
 
