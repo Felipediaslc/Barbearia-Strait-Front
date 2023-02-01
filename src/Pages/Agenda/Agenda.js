@@ -16,17 +16,24 @@ const Agenda = () => {
   const [formPague, setFormPague] = useState("");
   const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [update, setUpdate] = useState(false);
 
   
 
 
   useEffect(() => {
-   
-       loadClients();
+        if(update){
+
+          loadClients();
+        }
 
      
     
-  }, []);
+  }, [update]);
+
+  const updateState = () => {
+    setUpdate((state) => !state)
+  };
 
   const loadClients = async () => {
     try {
@@ -175,14 +182,14 @@ const Agenda = () => {
         </form>
 
         <div className="retorno-list">
-        
+        <button className="up" onClick={updateState}><i class="fa fa-refresh" aria-hidden="true"></i></button>
       {loading && <p>Carregando dados ...</p>}
       <ul>
         {clients.map((client) => (
           <li id={client.id}>{" "}Data: {client.data}<br /> Horario: {client.tempo}<br />Serviço: {client.servico}<br />Funcionário: {client.funcionario}<br />Forma de Pagamento: {client.formPague}</li>
         ))}
       </ul>
-      
+     
     </div>
       </div>
     </>

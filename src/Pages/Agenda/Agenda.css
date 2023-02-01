@@ -123,7 +123,7 @@
 }
 
 .retorno-list .up{
-  position: absolute;
+  position:fixed;
   padding: 0.4rem 0.5rem 0.4rem 0.5rem;
   margin-left: 50.5rem;
   margin-top: 0.5rem;
@@ -132,6 +132,7 @@
   background-color: transparent;
   color: #ed8c1a;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .retorno-list .up i{
