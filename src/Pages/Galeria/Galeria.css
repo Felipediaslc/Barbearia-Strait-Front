@@ -3,7 +3,8 @@
 .galeria{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.8);
+    background-image:  url('../Servicos/imag/servico.png');
+    /* background-color: rgba(0,0,0,0.8); */
    
   }
   .galeria p{

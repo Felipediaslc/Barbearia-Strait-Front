@@ -75,6 +75,10 @@
     margin-right: 0.5rem;
     
 }
+.containerss .card .card-content ul li .fa{
+
+    color: #ED8C1A;
+}
 
 .containerss .card .card-content #bt{
     width: 8rem;
