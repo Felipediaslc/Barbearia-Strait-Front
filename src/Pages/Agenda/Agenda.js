@@ -17,11 +17,18 @@ const Agenda = () => {
   const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(false);
   const [update, setUpdate] = useState(false);
+  const [items, setItems] = useState([]);
 
   
 
 
   useEffect(() => {
+
+    const items = JSON.parse(localStorage.getItem('usuario'));
+    console.log(items.nomeCompleto);
+    if (items) {
+      setItems(items);
+     }
         if(update){
 
           loadClients();
@@ -102,7 +109,7 @@ const Agenda = () => {
       </header>
       <div className="container-agend">
         <form className="agendament">
-          <h2>Agendament</h2>
+          <h2>{items.nomeCompleto}</h2>
 
           <div className="dat">
             <input
@@ -182,7 +189,7 @@ const Agenda = () => {
         </form>
 
         <div className="retorno-list">
-        <button className="up" onClick={updateState}><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        <button className="up" onClick={updateState}><i className="fa fa-refresh" aria-hidden="true"></i></button>
       {loading && <p>Carregando dados ...</p>}
       <ul>
         {clients.map((client) => (
