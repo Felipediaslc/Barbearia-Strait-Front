@@ -94,25 +94,7 @@ const Agenda = () => {
     }
   }
 
-  async function agendarDelet(event) {
-    event.preventDefault();
-  
-    const respon = await axios.delete(`https://strait-back-integrador.herokuapp.com/agendamentos/${items.id}`);
 
-    if (respon.status === 200) {
-
-      toast.success("Agendamento excluído com Sucesso!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    }
-  }
   return (
     <>
                   
@@ -212,7 +194,6 @@ const Agenda = () => {
         <button className="up" onClick={updateState}><i className="fa fa-refresh" aria-hidden="true"></i></button>
       {loading && <p>Carregando dados ...</p>}
       <ul>
-      <button className="clos" onClick={onClose}/>
         {clients.map((client) => (
           <li id={client.id}>{" "}Data: {client.data}<br /> Horario: {client.tempo}<br />Serviço: {client.servico}<br />Funcionário: {client.funcionario}<br />Forma de Pagamento: {client.formPague}</li>
         ))}
