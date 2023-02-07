@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useParams } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -18,7 +18,8 @@ const Agenda = () => {
   const [loading, setLoading] = useState(false);
   const [update, setUpdate] = useState(false);
   const [items, setItems] = useState([]);
-
+  const [idUsuario, setIdUsuario] = useState("");
+  const { id } = useParams();
   
 
 
@@ -66,11 +67,12 @@ const Agenda = () => {
   async function agendarUsuario(event) {
     event.preventDefault();
     const agendar = {
-      data: data,
+      data: data, 
       tempo: tempo,
       servico: servico,
       funcionario: funcionario,
       formPague: formPague,
+      idUsuario: Number(id)
     };
     const respon = await axios.post(
       "https://strait-back-integrador.herokuapp.com/agendamentos",
