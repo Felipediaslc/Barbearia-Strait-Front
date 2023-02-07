@@ -29,7 +29,7 @@ const Login = () => {
     const retorn = await axios.post("https://strait-back-integrador.herokuapp.com/usuarios/login", { email,senha });
     if (retorn.data && retorn.status === 200) {
       localStorage.setItem("usuario", JSON.stringify(retorn.data));
-      navigate("/agenda");
+      navigate("/agenda/:id");
     }
   };
 
