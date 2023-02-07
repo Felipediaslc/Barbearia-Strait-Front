@@ -121,6 +121,34 @@
   color: #000000;
   font-weight: bold;
 }
+.retorno-list .clos{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+  right: calc(-100% + 2.1rem);
+  top: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  
+}
+.clos::before , .clos::after{
+  content: ' ';
+  position: absolute;
+  width: 0.2rem;
+  height: 1rem;
+  background-color: #000000; 
+}
+
+.clos::before{
+  transform: rotate(45deg);
+}
+.clos::after{
+  transform: rotate(-45deg);
+}
 
 .retorno-list .up{
   position:fixed;
