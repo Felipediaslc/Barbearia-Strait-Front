@@ -17,7 +17,7 @@ export default () => {
     <Routes>
         <Route  path="/" element={ <Homee />  } />
         <Route  path="/home" element={ <Homee />  } />
-        <Route  path="/agenda" element={ <Agenda />  } />
+        <Route  path="/agenda/:id" element={ <Agenda />  } />
         <Route  path="/quemsomos" element={<QuemSomos />  } /> 
         <Route  path="/servicos" element={ <Servicos /> } />
         <Route  path="/galeria" element={ <Galeria /> } /> 
