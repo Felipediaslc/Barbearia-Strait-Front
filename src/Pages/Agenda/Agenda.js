@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useParams } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect} from "react";
+import { Link, useParams  } from "react-router-dom";
 import axios from "axios";
 
 import logo from "../Agenda/imag/logosvejasssdeussss.png";
@@ -19,7 +19,7 @@ const Agenda = () => {
   const [update, setUpdate] = useState(false);
   const [items, setItems] = useState([]);
   const [idUsuario, setIdUsuario] = useState("");
-  const { id } = useParams();
+  const { id } = useParams()
   
 
 
