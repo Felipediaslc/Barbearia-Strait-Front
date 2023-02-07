@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 import logo from "../Agenda/imag/logosvejasssdeussss.png";
@@ -18,7 +18,8 @@ const Agenda = () => {
   const [loading, setLoading] = useState(false);
   const [update, setUpdate] = useState(false);
   const [items, setItems] = useState([]);
- 
+  const [idUsuario, setIdUsuario] = useState("");
+  const { id } = useParams()
   
 
 
@@ -71,7 +72,7 @@ const Agenda = () => {
       servico: servico,
       funcionario: funcionario,
       formPague: formPague,
-      
+      idUsuario: Number(items.id)
     };
     const respon = await axios.post(
       "https://strait-back-integrador.herokuapp.com/agendamentos",
