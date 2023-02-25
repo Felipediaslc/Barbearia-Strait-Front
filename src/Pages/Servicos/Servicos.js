@@ -2,7 +2,7 @@ import './Servicos.css';
 
 function Servicos() {
   return (
-    <div  className="servicos" >
+    <div  className="servicos"  >
         <div className="titulo">Serviços</div>
     <div className="container">
     <div className="card">

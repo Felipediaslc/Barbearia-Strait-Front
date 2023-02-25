@@ -14,8 +14,8 @@ function Menu() {
            
               <ul className='menu' role="menu">
                 <li><Link to="/home">Home</Link></li>
-                <li><Link to="/quemsomos" >Quem Somos</Link></li>
                 <li><Link to="/servicos">Serviços</Link></li>
+                <li><Link to="/quemsomos" >Quem Somos</Link></li>
                 <li><Link to="/galeria">Galeria</Link></li>
                 <li><Link to="/planos">Plano Parceria</Link></li>
                 <li><Link to="/cadastros"><button className='cadastro'  >Cadastre-se</button></Link></li>

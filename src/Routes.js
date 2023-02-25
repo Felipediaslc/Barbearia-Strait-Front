@@ -12,6 +12,7 @@ import Agenda from './Pages/Agenda/Agenda'
 
 
 
+
 export default () => {
     return (
     <Routes>
@@ -24,6 +25,7 @@ export default () => {
         <Route  path="/cadastros" element={ <Cadastros /> } />
         <Route  path="/login" element={ <Login /> } />
         <Route  path="/planos" element={ <Planos /> } />
+        
       </Routes>
     );
 }
