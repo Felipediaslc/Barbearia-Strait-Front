@@ -81,7 +81,7 @@ const Homee = () => {
           agendamento feitos por ele. Esse projeto tem uma otima tecnologia que é React JS,   <br />
           uma biblioteca JavaScript para criar interfaces de usuárioe e uma boa Api Node JS.<br />
           A skill usada nesse projeto é o Rect js com seus recursos que seguem o padrão<br />
-          Single Page Applications no Front-End, no Back-End as tecnologias foram Node.js,<br />
+          Single Page Applications no Front-End. No Back-End as tecnologias foram Node.js,<br />
            Express.js, a Orm Prisma, seguindo o padrão MVC (MODEL VIEW CONTROLLER) <br /> </pre>
     </section>
     </>
