@@ -9,6 +9,7 @@ import Cadastros from './Pages/Cadastros/Cadastros'
 import Login from './Pages/Login/Login'
 import Planos from './Pages/Planos/Planos'
 import Agenda from './Pages/Agenda/Agenda'
+import ListAgendamentos from './Pages/ListAgendamentos/ListAgendamentos';
 
 
 
@@ -19,6 +20,7 @@ export default () => {
         <Route  path="/" element={ <Homee />  } />
         <Route  path="/home" element={ <Homee />  } />
         <Route  path="/agenda" element={ <Agenda />  } />
+        <Route  path="/agendamentos" element={ <ListAgendamentos />  } />
         <Route  path="/quemsomos" element={<QuemSomos />  } /> 
         <Route  path="/servicos" element={ <Servicos /> } />
         <Route  path="/galeria" element={ <Galeria /> } /> 

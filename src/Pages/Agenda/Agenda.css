@@ -9,89 +9,8 @@
   text-decoration: none;
 }
 
-.header-log {
-  box-sizing: border-box;
-  width: 100vw;
-  height: 18vh;
-  padding: 3.5rem 2rem 0 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("./imag/background.png");
-  border-bottom: 0.2px solid #ed8c1a;
 
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  position: fixed;
-  margin-top: -3rem;
-}
-.logo-log-client {
-  margin-top: -0.3rem;
-  width: 4.5vw;
-}
 
-.menu-log {
-  display: flex;
-  list-style: none;
-  gap: 0.4rem;
-}
-
-.menu-log a {
-  letter-spacing: 0.1rem;
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  padding: 0.8rem;
-  color: white;
-}
-.gb_Ba {
-  -webkit-background-size: 32px 32px;
-  background-size: 32px 32px;
-  border: 0;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  margin-top: -0.4rem;
-  position: relative;
-  height: 38px;
-  width: 38px;
-  z-index: 0;
-  cursor: pointer;
-  background-color: transparent;
-}
-.logo-nome-client {
-  display: flex;
-  margin: 0.8rem 65rem 1rem -3rem;
-  color: #fff;
-  font-family: "Metal Mania", cursive;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-}
-/*DROPDOWN*/
-
-.dropbtn {
-  background-color: transparent;
- 
-  padding: 8px;
-  margin-top: 0.3rem;
- border-radius: 25rem;
-  border: 1px solid #ed8c1a;
-  cursor: pointer;
-  margin-left: -2rem;
-  
-}
-.dropbtn a .fa-sign-out {
- position: absolute;
-  color: #ed8c1a;
-  margin: -0.7rem 5rem 0 -0.5rem;
-  font-size: 1.5rem;
-  
-}
-
-.dropdown {
-  position: absolute;
-  
-}
 
 
 
@@ -103,7 +22,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./imag/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,16 +79,16 @@
   width: 31vw;
   height: 90.2vh;
   border: none;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
   margin-top: 3.6rem;
-  margin-right: 0.1rem;
+  margin-right: 31rem;
 }
 
 .agendament h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
+ font-family: 'Metal Mania', cursive;
+  
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
   color: #fff;
   margin-top: -25rem;
 }

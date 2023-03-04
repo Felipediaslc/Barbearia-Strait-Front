@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from "react";
-import { Link, useParams } from "react-router-dom";
+import {  useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import MenuUser from "../../componentes/MenuUser/MenuUser";
 
-import logo from "../Agenda/imag/logosvejasssdeussss.png";
 
 import { toast } from "react-toastify";
 
@@ -14,12 +14,10 @@ const Agenda = () => {
   const [servico, setServico] = useState("");
   const [funcionario, setFuncionario] = useState("");
   const [formPague, setFormPague] = useState("");
-  const [clients, setClients] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [update, setUpdate] = useState(false);
   const [items, setItems] = useState([]);
   const [idUsuario, setIdUsuario] = useState("");
-  const { id } = useParams()
+  const { id } = useParams();
+  const navigate = useNavigate();
   
 
 
@@ -30,40 +28,12 @@ const Agenda = () => {
     if (items) {
       setItems(items);
      }
-        if(update){
-
-          loadClients();
-        }
+       
 
      
     
-  }, [update]);
+  }, []);
 
-  const updateState = () => {
-    setUpdate((state) => !state)
-  };
-
-  const loadClients = async () => {
-    try {
-      setLoading(true);
-      const responded = await axios.get("https://strait-back-integrador.herokuapp.com/agendamentos");
-      setClients(responded.data);
-    } catch (e) {
-      console.log(e);
-      toast.success("Falha ao buscar os dados do Cliente", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
   async function agendarUsuario(event) {
     event.preventDefault();
     const agendar = {
@@ -80,7 +50,7 @@ const Agenda = () => {
     );
 
     if (respon.status === 200) {
-
+      navigate("/agendamentos");
       toast.success("Agendamento realizado com Sucesso!", {
         position: "top-right",
         autoClose: 5000,
@@ -97,18 +67,9 @@ const Agenda = () => {
 
   return (
     <>
-                  
-      <header className="header-log">
-        <img className="logo-log-client" src={logo} alt="locomarca" />
-        <p className="logo-nome-client">Agenda client</p>
-        <nav className="nav-log">
-          <ul className="menu-log" role="menu">
-            <div className="dropdown">
-              <button className="dropbtn"><Link to="/login"><i className="fa fa-sign-out"   aria-hidden="true"></i></Link></button>
-            </div>
-          </ul>
-        </nav>
-      </header>
+
+         <MenuUser />
+
       <div className="container-agend">
         <form className="agendament">
           <h2>{items.nomeCompleto}</h2>
@@ -190,16 +151,7 @@ const Agenda = () => {
           </div>
         </form>
 
-        <div className="retorno-list">
-        <button className="up" onClick={updateState}><i className="fa fa-refresh" aria-hidden="true"></i></button>
-      {loading && <p>Carregando dados ...</p>}
-      <ul>
-        {clients.map((client) => (
-          <li id={client.id}>{" "}Data: {client.data}<br /> Horario: {client.tempo}<br />Serviço: {client.servico}<br />Funcionário: {client.funcionario}<br />Forma de Pagamento: {client.formPague}</li>
-        ))}
-      </ul>
-     
-    </div>
+    
       </div>
     </>
   );
