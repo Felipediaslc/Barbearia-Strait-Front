@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
 .quem-somos{
     background: linear-gradient( rgba(0,0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(./imag/pexels-nikolaos-dimou-022.jpg);
     background-size: cover;
@@ -13,7 +15,7 @@
    justify-content: center;
    align-items: flex-start;
    padding: 6rem 0 0 0.5rem;
-   font-family: 'Metal Mania', cursive;
+   font-family: 'Stardos Stencil', cursive;
      font-size: 5rem;
   
   }

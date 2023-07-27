@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
@@ -22,9 +22,9 @@
     padding: -5rem 0 0  3rem;
     width: 50vw;
    margin: -28rem -10rem 1rem  17rem;
-  
+   font-family: 'Stardos Stencil', cursive;
    color: white;
-   font-family: 'Metal Mania', cursive;
+   
    font-size: 5.5rem; 
  }
 
