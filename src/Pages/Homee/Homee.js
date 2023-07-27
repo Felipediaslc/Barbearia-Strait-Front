@@ -10,7 +10,7 @@ const Homee = () => {
     <section  className='home'   id='home' >
      
     <p className='title-logs' >SEU CABELO E BARBA MOLDURAM SEU ROSTO,   <br />
-   CUIDE BEM cuide bem deles e apareça!</p> 
+   CUIDE BEM DELES E APAREÇA!</p> 
    <img  className='imagem-logo 'src={foto}  alt='locomarca'/>
     <p className='sub'>Bora agendar seu horário?</p>
 
