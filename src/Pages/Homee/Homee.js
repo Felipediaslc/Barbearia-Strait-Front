@@ -16,7 +16,7 @@ const Homee = () => {
 
 </section>
 <div  className="servicos" id='servicos'>
-        <div className="titulo">Serviços</div>
+        <div className="titulo">SERVIÇOS</div>
     <div className="container">
     <div className="card">
         <div className="card-title">
