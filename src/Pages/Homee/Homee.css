@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Fredericka+the+Great&display=swap');
 
 
 .home{
@@ -19,7 +19,7 @@
     margin-left: 1rem ;
    z-index: 1;
    color: white;
- font-family: 'Fredericka the Great', cursive;
+ font-family: 'Amita', cursive;
    font-size: 2.5rem; 
    
 } 
