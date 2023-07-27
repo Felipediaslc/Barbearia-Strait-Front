@@ -1,5 +1,5 @@
 /*GALERIA      */
-
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
 .galeria{
     width: 100vw;
     height: 100vh;
@@ -13,7 +13,7 @@
    justify-content: center;
    align-items: flex-start;
    padding: 5rem 0 0 0;
-   font-family: 'Metal Mania', cursive;
+   font-family: 'Stardos Stencil', cursive;
      font-size: 5rem;
   
   }
