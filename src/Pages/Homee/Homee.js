@@ -9,8 +9,8 @@ const Homee = () => {
     <>
     <section  className='home'   id='home' >
      
-    <p className='title-logs' >Seu cabelo e barba molduram  seu rosto,   <br />
-   cuide bem deles e apareça!</p> 
+    <p className='title-logs' >SEU CABELO E BARBA MOLDURAM SEU ROSTO,   <br />
+   CUIDE BEM cuide bem deles e apareça!</p> 
    <img  className='imagem-logo 'src={foto}  alt='locomarca'/>
     <p className='sub'>Bora agendar seu horário?</p>
 
