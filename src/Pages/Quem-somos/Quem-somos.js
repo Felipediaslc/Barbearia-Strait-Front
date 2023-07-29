@@ -11,7 +11,7 @@ function QuemSomos() {
          E esse projeto intgrador,tem o objetivo de dar praticidade , <br />
          estreitar a relação entre cliente - empresa e acesso as informações. <br />
          A praticidade de navegar pelas pages, se cadastrar, <br />
-         acessar a page usuário, onde o clinte pode solicitar 
+         acessar a page usuário, onde o clinte pode solicitar  <br />
          o seu atendimento e uma listar de agendamento feitos por ele.<br />
          Esse projeto tem uma otima tecnologia que é React JS,   <br />
          uma biblioteca JavaScript para criar interfaces de usuários <br />
