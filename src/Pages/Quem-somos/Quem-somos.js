@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './Quem-somos.css';
 import prisma from './imag/imagSVG/light-prisma.svg';
+import css from './imag/imagSVG/css3.svg';
+import mysql from './imag/imagSVG/MySQL-Dark.svg';
 
 function QuemSomos() {
   return (
@@ -22,6 +24,13 @@ function QuemSomos() {
     
        <div class="body-part-2">
        <div class="hoodie-guy"></div>
+       <div class="circle">
+                  <span style="--i:1;"><img src={prisma} alt='' height="75px" /></span>
+                  <span style="--i:2;"><img src={css} alt='' height="70px" /></span>
+                  <span style="--i:3;"><img src={mysql} alt='' height="75px" /></span>
+                   
+                    
+                </div>
    
 </div>
   
