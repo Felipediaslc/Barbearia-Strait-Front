@@ -62,7 +62,7 @@
   z-index: 1000;
 }
 
- .body-part-2 .circle {
+.circle {
   position: relative;
   top: 350px;
   left: 100px;
@@ -83,7 +83,7 @@
   }
 }
 
- .body-part-2 .circle span {
+.circle span {
   position: absolute;
   top: 0;
   left: 0;
@@ -96,7 +96,7 @@
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * calc(360deg / 15))) translateZ(300px);
 }
- .body-part-2 .circle span img {
+ .circle span img {
   position: relative;
   top: 12px;
   left: 12px;
