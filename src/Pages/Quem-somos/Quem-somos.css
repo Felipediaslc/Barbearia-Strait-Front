@@ -32,26 +32,15 @@
 
   /* SKILL  */
 
-  #content-body {
-  display: flex;
-  background-color: transparent;
-  align-items: flex-start;
-  height: 10vh;
  
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 50px 0 0 50px;
-  margin-bottom: 100vh;
-  max-height: 100vh;
-}
 
 
 
-.body-part-2 {
+.quem-somos .body-part-2 {
   position: relative;
 }
 
-.background-circle {
+.quem-somos .background-circle {
   background: transparent;
   top: 500rem;
   margin-right: 8rem;
@@ -61,7 +50,7 @@
   box-shadow: 0 0 20px transparent;
 }
 
-.hoodie-guy {
+.quem-somos .hoodie-guy {
   position: absolute;
   background: url(./imag/imagSVG/Hoodie-guy.png);
   left:-1rem;
@@ -72,7 +61,7 @@
   
 }
 
-.circle {
+.quem-somos .circle {
   position: relative;
   top: 350px;
   left: 100px;
@@ -93,7 +82,7 @@
   }
 }
 
-.circle span {
+.quem-somos .circle span {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,7 +96,7 @@
   transform: rotateY(calc(var(--i) * calc(360deg / 15))) translateZ(300px);
 }
 
-.circle span img {
+.quem-somos .circle span img {
   position: relative;
   top: 12px;
   left: 12px;
