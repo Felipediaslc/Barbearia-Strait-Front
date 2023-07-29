@@ -36,11 +36,11 @@
 
 
 
-.body-part-2 {
+  .quem-somos .body-part-2 {
   position: relative;
 }
 
-.background-circle {
+  .background-circle {
   background: transparent;
   top: 500rem;
   margin-right: 8rem;
@@ -50,7 +50,7 @@
   box-shadow: 0 0 20px transparent;
 }
 
- .hoodie-guy {
+.quem-somos .body-part-2  .hoodie-guy {
   position: absolute;
   background: url(./imag/imagSVG/Hoodie-guy.png);
   left:-1rem;
