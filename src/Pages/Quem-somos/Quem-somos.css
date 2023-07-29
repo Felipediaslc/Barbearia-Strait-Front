@@ -38,6 +38,7 @@
 
   .quem-somos .body-part-2 {
   position: relative;
+  z-index: 1000;
 }
 
   .background-circle {
