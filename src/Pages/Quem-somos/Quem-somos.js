@@ -19,13 +19,13 @@ function QuemSomos() {
     
    
    <div class="body-part-2">
-       <div class="hoodie-guy-animation-class">
+       
            <div class="hoodie-guy"></div>
            <div class="circle">
            <span style="--i:1;"><img src={prisma} alt='' height="75px"/></span>
             
            </div>
-       </div>
+    
        <div class="background-circle"></div>
    </div>
 
