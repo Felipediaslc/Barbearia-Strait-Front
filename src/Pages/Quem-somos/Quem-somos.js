@@ -18,16 +18,7 @@ function QuemSomos() {
            Express.js, a Orm Prisma, seguindo o padrão MVC (MODEL VIEW CONTROLLER) <br /> </pre>
     
    
-   <div class="body-part-2">
-       
-           <div class="hoodie-guy"></div>
-           <div class="circle">
-           <span style="--i:1;"><img src={prisma} alt='' height="75px"/></span>
-            
-           </div>
-    
-       <div class="background-circle"></div>
-   </div>
+  
 
     </section >
 
