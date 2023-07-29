@@ -16,7 +16,19 @@ function QuemSomos() {
           A skill usada nesse projeto é o Rect js com seus recursos que seguem o padrão<br />
           Single Page Applications no Front-End. No Back-End as tecnologias foram Node.js,<br />
            Express.js, a Orm Prisma, seguindo o padrão MVC (MODEL VIEW CONTROLLER) <br /> </pre>
-
+     <div id="content-body">
+   
+   <div class="body-part-2">
+       <div class="hoodie-guy-animation-class">
+           <div class="hoodie-guy"></div>
+           <div class="circle">
+           <span style="--i:1;"><img src={prisma} alt='' height="75px"/></span>
+            
+           </div>
+       </div>
+       <div class="background-circle"></div>
+   </div>
+</div>
     </section >
 
    
