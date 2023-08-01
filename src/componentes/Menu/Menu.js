@@ -19,7 +19,7 @@ function Menu() {
                 <li className='efect'><Link to="/galeria">Galeria</Link></li>
                 <li className='efect'><Link to="/planos">Plano Parceria</Link></li>
                 <li><Link to="/cadastros"><button className='cadastro'  >Cadastre-se</button></Link></li>
-               <li><Link to="/login" ><button className='entrar entrar-houver entrar-text'  >Log-in</button></Link></li>  
+               <li id="login"><Link to="/login" ><button className='entrar entrar-houver'  ><span clasName="entrar=text">Log-in</span></button></Link></li>  
                 
               </ul>
             </nav>

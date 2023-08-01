@@ -9,7 +9,7 @@
     text-decoration: none;
     
 }
-Body{
+#login {
     --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
     0% no-repeat padding-box;
