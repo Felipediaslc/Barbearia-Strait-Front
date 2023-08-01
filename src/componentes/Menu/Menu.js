@@ -14,7 +14,7 @@ function Menu() {
            
               <ul className='menu' role="menu">
                 <li className='efect'><Link to="/home">Home</Link></li>
-                <li className='efect'><Link to="/servicos">Serviços</Link></liclassName=>
+                <li className='efect'><Link to="/servicos">Serviços</Link></li>
                 <li className='efect'><Link to="/quemsomos" >Quem Somos</Link></li>
                 <li className='efect'><Link to="/galeria">Galeria</Link></li>
                 <li className='efect'><Link to="/planos">Plano Parceria</Link></li>
