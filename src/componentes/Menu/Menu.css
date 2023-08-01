@@ -107,7 +107,7 @@
   letter-spacing: 0.8px;
   font-size: 14px;
   font-weight: 300;
-  color: white;
+  color: #000;
   white-space: nowrap;
   margin: 20px auto;
   width: 166px;
@@ -140,7 +140,7 @@
 }
 
 .btn.btn-hover .btn-text {
-  color: white;
+  color: #000;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   mix-blend-mode: lighten;
