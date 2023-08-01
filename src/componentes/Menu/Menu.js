@@ -19,7 +19,7 @@ function Menu() {
                 <li className='efect'><Link to="/galeria">Galeria</Link></li>
                 <li className='efect'><Link to="/planos">Plano Parceria</Link></li>
                 <li><Link to="/cadastros"><button className='cadastro'  >Cadastre-se</button></Link></li>
-               <li id="login"><Link to="/login" ><div class="body"><button class="btn btn-hover"><span class="btn-text">Login</span></button></div></Link></li>  
+               <li><Link to="/login" ><button className='entrar'  >Log-in<i className="fa fa-sign-in" aria-hidden="true"></i></button></Link></li>  
                 
               </ul>
             </nav>
