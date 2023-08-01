@@ -13,11 +13,11 @@ function Menu() {
             <nav className='nav'>
            
               <ul className='menu' role="menu">
-                <li><Link to="/home">Home</Link></li>
-                <li><Link to="/servicos">Serviços</Link></li>
-                <li><Link to="/quemsomos" >Quem Somos</Link></li>
-                <li><Link to="/galeria">Galeria</Link></li>
-                <li><Link to="/planos">Plano Parceria</Link></li>
+                <li className='efect'><Link to="/home">Home</Link></li>
+                <li className='efect'><Link to="/servicos">Serviços</Link></liclassName=>
+                <li className='efect'><Link to="/quemsomos" >Quem Somos</Link></li>
+                <li className='efect'><Link to="/galeria">Galeria</Link></li>
+                <li className='efect'><Link to="/planos">Plano Parceria</Link></li>
                 <li><Link to="/cadastros"><button className='cadastro'  >Cadastre-se</button></Link></li>
                <li><Link to="/login" ><button className='entrar'  >Log-in<i className="fa fa-sign-in" aria-hidden="true"></i></button></Link></li>  
                 

@@ -53,11 +53,11 @@
     padding: 1rem;
     color: white;
   }
- .menu a::before {
+ .menu .efect a::before {
   margin-left: auto;
 }
 
-.menu a::after, .menu a::before {
+.menu .efect a::after, .menu .efect a::before {
   content: '';
   width: 0%;
   height: 2px;
@@ -66,7 +66,7 @@
   transition: 0.5s;
 }
 
-.menu a:hover::after, .menu a:hover::before {
+.menu .efect a:hover::after, .menu .efect a:hover::before {
   width: 100%;
 }
  .cadastro{
