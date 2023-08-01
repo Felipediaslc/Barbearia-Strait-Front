@@ -9,6 +9,11 @@
     text-decoration: none;
     
 }
+Body{
+    --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
+    0% no-repeat padding-box;
+}
 .header {
   
     
@@ -91,37 +96,70 @@
     font-weight: bold;
   }
 
-.entrar{
-    margin-top: -0.3rem;
-    background-color: rgb(237, 140, 26);
-    color: black;
-    padding: 0.1rem 0.1rem 0.3rem 1rem;
-    border: none;
-    cursor: pointer;
-    
-    border-radius: 1rem;
-    font-weight: bold;
-    font-size: 1rem;
-  }
 
-  .entrar .fa{
-    color: #000;
-    margin: 0.2rem 1rem 0 0.5rem;
-    font-size: 1rem;
+
+.entrar {
+  border-radius: 23px;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  white-space: nowrap;
+  margin: 20px auto;
+  width: 166px;
+  height: 45px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #dd7d00;
+  background: transparent;
   
-  }
-  .entrar .fa:hover{
-    background-color: rgba(0,0,0,.4);
-    color: #ED8C1A;
-  }
- .entrar:hover{
-    background-color: rgba(0,0,0,.4);
-    color: #ED8C1A;
-    
-    
 }
-.entrar:active{
-    background-color: #ED8C1A;
-    color: rgba(0,0,0,.9); 
-   
-} 
+
+.entrar::before {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.entrar:hover::before {
+  width: 100%;
+}
+
+.entrar.entrar-hover {
+  border-radius: 50px;
+  position: relative;
+}
+
+.entrar.entrar-hover .entrar-text {
+  color: white;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  mix-blend-mode: lighten;
+}
+
+.entrar.entrar-hover::before {
+  border-radius: 50px;
+  width: 100%;
+  background: conic-gradient(
+    transparent 240deg, #ac633697 240deg,
+    #fff2af6a 300deg, transparent 300deg
+  )
+  100% / 64%
+  no-repeat, var(--yellow-bg);
+}
+
+.entrar.entrar-hover:hover .entrar-text {
+  margin-right: 30px;
+}
+
+.entrar.entrar-hover:hover::before {
+  background-position: right;
+  border-radius: 23px;
+  width: 25%;
+}
