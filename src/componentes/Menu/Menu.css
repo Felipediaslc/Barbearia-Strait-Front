@@ -140,7 +140,7 @@
 }
 
 .btn.btn-hover .btn-text {
-  color: #000;
+  color: #fff;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   mix-blend-mode: lighten;
