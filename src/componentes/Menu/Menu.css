@@ -9,11 +9,7 @@
     text-decoration: none;
     
 }
-#login {
-    --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
-    0% no-repeat padding-box;
-}
+
 .header {
   
     
@@ -96,14 +92,22 @@
     font-weight: bold;
   }
 
+  /*login buttun*/
 
+  .body {
+  --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
+    0% no-repeat padding-box;
+  color: white;
+  margin: 0;
+}
 
-.entrar {
+.btn {
   border-radius: 23px;
   letter-spacing: 0.8px;
   font-size: 14px;
   font-weight: 300;
-  color: black;
+  color: white;
   white-space: nowrap;
   margin: 20px auto;
   width: 166px;
@@ -112,10 +116,9 @@
   position: relative;
   border: 1px solid #dd7d00;
   background: transparent;
-  
 }
 
-.entrar::before {
+.btn::before {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   content: "";
@@ -127,23 +130,23 @@
   right: 0;
 }
 
-.entrar:hover::before {
+.btn:hover::before {
   width: 100%;
 }
 
-.entrar.entrar-hover {
+.btn.btn-hover {
   border-radius: 50px;
   position: relative;
 }
 
-.entrar.entrar-hover .entrar-text {
+.btn.btn-hover .btn-text {
   color: white;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   mix-blend-mode: lighten;
 }
 
-.entrar.entrar-hover::before {
+.btn.btn-hover::before {
   border-radius: 50px;
   width: 100%;
   background: conic-gradient(
@@ -154,12 +157,16 @@
   no-repeat, var(--yellow-bg);
 }
 
-.entrar.entrar-hover:hover .entrar-text {
+.btn.btn-hover:hover .btn-text {
   margin-right: 30px;
 }
 
-.entrar.entrar-hover:hover::before {
+.btn.btn-hover:hover::before {
   background-position: right;
   border-radius: 23px;
   width: 25%;
 }
+
+
+
+
