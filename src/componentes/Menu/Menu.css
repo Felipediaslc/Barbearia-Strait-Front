@@ -155,7 +155,7 @@
   position: absolute;
   padding: 0.2rem 1rem 0.3rem 1rem;
   background: #ED8C1A;
-  border-radius: 50%;
+  border-radius: 5%;
   transition: 0.35s ease;
   display: flex;
   justify-content: center;
@@ -164,7 +164,7 @@
 }
 
 .entrar:hover .container {
-  left: calc(100% - 5rem);
+  left: calc(10% - 5rem);
   color: #ED8C1A;
   background: #000;
   
