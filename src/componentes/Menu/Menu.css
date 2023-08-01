@@ -153,9 +153,7 @@
 
 .container {
   position: absolute;
-  left: 5px;
-  width: 50px;
-  height: 50px;
+  padding: 0.2rem 1rem 0.3rem 1rem;
   background: #ED8C1A;
   border-radius: 50%;
   transition: 0.35s ease;
@@ -166,7 +164,7 @@
 }
 
 .entrar:hover .container {
-  left: calc(100% - 55px);
+  left: calc(100% - 5rem);
   color: #ED8C1A;
   background: #000;
   
