@@ -100,11 +100,12 @@
     color: #fff;
     text-align: center;
     font-size: 32px;
-    padding: 16px;
-    width: 220px;
+ 
     transition: all 0.5s;
     cursor: pointer;
-    margin: 36px;
+    margin-top: -1rem;
+    margin-right: -1.5rem;
+    padding: 0.2rem 1rem 0.3rem 1rem;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
   }
   
