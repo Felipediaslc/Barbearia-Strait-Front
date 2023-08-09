@@ -91,121 +91,45 @@
     font-weight: bold;
   }
 
-  /*botão Login*/
-  .btn-conteiner {
-    display: flex;
-    justify-content: center;
-    --color-text: #000;
-    --color-background: #ED8C1A;
-    --color-outline:#ED8C1A;
-    --color-shadow: #ED8C1A;
-    padding: 0rem 0.1rem 0rem 0.1rem;
-  }
-  
-  .btn-conteiner:hover{
-   display: flex;
-    justify-content: center;
-    --color-text: #ED8C1A;
-    --color-background: #000;
-    --color-outline: #ED8C1A;
-    --color-shadow: #ED8C1A;
-  
-  }
-  
-  .btn-content {
-    display: flex;
-    align-items: center;
-    padding: 0rem 1.4rem 0rem 1rem;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--color-text);
-    background: var(--color-background);
-    transition: 1s;
-    border-radius: 1rem;
-    box-shadow: 0 0 0.2rem 0 var(--color-background);
-  }
-  
-  .btn-content:hover, .btn-content:focus {
-    transition: 0.5s;
-    -webkit-animation: btn-content 1s;
-    animation: btn-content 1s;
-    outline: 0.1rem solid transparent;
-    outline-offset: 0.1rem;
-    box-shadow: 0 0 0.1rem 0 var(--color-background);
-  }
-  
-  .btn-content .icon-arrow {
-    transition: 0.5s;
-    margin-right: 0rem;
-    transform: scale(0.6);
-  }
-  
-  .btn-content:hover .icon-arrow {
-    transition: 0.5s;
-    margin-right: 1rem;
-  }
-  
-  .icon-arrow {
-    width: 0.5rem;
-    margin-left: 0.1rem;
-    position: relative;
-    top: 6%;
-  }
-    
-  /* SVG */
-  #arrow-icon-one {
-    transition: 0.4s;
-    transform: translateX(-60%);
-  }
-  
-  #arrow-icon-two {
-    transition: 0.5s;
-    transform: translateX(-30%);
-  }
-  
-  .btn-content:hover #arrow-icon-three {
-    animation: color_anim 1s infinite 0.2s;
-  }
-  
-  .btn-content:hover #arrow-icon-one {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.6s;
-  }
-  
-  .btn-content:hover #arrow-icon-two {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.4s;
-  }
-  
-  /* SVG animations */
-  @keyframes color_anim {
-    0% {
-      fill: #ED8C1A;
-    }
-  
-    50% {
-      fill: var(--color-background);
-    }
-  
-    100% {
-      fill: #ED8C1A;
-    }
-  }
-  
-  
-  @-webkit-keyframes btn-content {
-    0% {
-      outline: 0.1rem solid var(--color-background);
-      outline-offset: 0;
-    }
-  }
-  
-  @keyframes btn-content {
-    0% {
-      outline: 0.1rem solid var(--color-background);
-      outline-offset: 0;
-    }
-  }
 
+
+  .button {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
