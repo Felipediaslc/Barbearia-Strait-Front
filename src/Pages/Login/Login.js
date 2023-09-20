@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from 'react-toastify';
 import Modal from "../Modal/Modal";
+import { Input } from "../../componentes/Input/Input"
+import { Button} from "../../componentes/Button/Button"
 import "./Login.css";
 
 const Login = () => {
@@ -41,40 +43,35 @@ const Login = () => {
    };
 
   return (
-    <form className="modal01 ">
-      <div className="modal01-content">
-        <div className="modal01-header"></div>
-        <div className="modal01-body">
-          <p className="crie-conta">Login</p>
-
-          <div className="nome01">
-            <input type="text"
-            placeholder="Digite seu E-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-             />
-          </div>
-          <div className="senha03">
-            <input
-            placeholder="Senha"
-            type="password"
-            value={senha}
+    <form className="login ">
+     
+       
+          <div  className= "flex flex-col items-center justify-center  mb-20 mt-12">
+          <h1 className="mb-6 text-2xl font-serif tracking-widest font-bold text-zinc-50">Login</h1>
+           <div className="flex flex-col gap-3 mb-3 mt-2 w-96 sm:ml-20 sm:-mr-10 sm:px-3 ">
+          <Input id="email"  value={email}
+            onChange={(e) => setEmail(e.target.value)} 
+            type="email" placeholder="E-mail" required={true} />
+          <Input id="senha" value={senha}
             onChange={(e) => setSenha(e.target.value)}
-             />
+          type="password" placeholder="password" required={true} />
           </div>
-          <div className="label" >
-            <label onClick={() => setIsModalVisible(true)}>
+
+           </div>
+
+           <div className="flex absolute cursor-pointer sm:mr-20 sm:-ml-10
+           justify-start mt-40 mr-80 ml-20 text-amber-600 " >
+            <span onClick={() => setIsModalVisible(true)}>
               Esqueci a senha
-            </label>
+            </span>
             {isModalVisible ? (
               <Modal onClose={() => setIsModalVisible(false)} />
             ) : null}
           </div>
-       
-
-          <button type="button"  className="ui-button-login" onClick={UserLogin}>Entrar</button>
-        </div>
-      </div>
+          
+          <div className="flex absolute items-end justify-center mt-80">
+          <Button type="button"  id="Entrar" onClick={(e) => UserLogin(e)} >Entrar</Button>
+          </div>
     </form>
   );
 };

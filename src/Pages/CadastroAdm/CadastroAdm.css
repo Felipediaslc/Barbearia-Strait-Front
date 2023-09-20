@@ -378,3 +378,4 @@
   color: #ed8c1a;
   font-weight: bold;
 }
+@media screen and (max-width: 320px){}

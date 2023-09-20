@@ -4,15 +4,20 @@ import '../Servicos/Servicos.css'
 import '../Quem-somos/Quem-somos.css'
 import foto from './imag/logs01.png'
 
+
 const Homee = () => {
   return (
     <>
     <section  className='home'   id='home' >
      
-    <p className='title-logs' >SEU CABELO E BARBA MOLDURAM SEU ROSTO,   <br />
+    <p className='title-logs' >SEU CABELO E BARBA MOLDURAM SEU ROSTO, <br />
    CUIDE BEM DELES E APAREÇA!</p> 
-   <img  className='imagem-logo 'src={foto}  alt='locomarca'/>
-    <p className='sub'>Bora agendar seu horário?</p>
+  <div className='imagem-logo '>
+  <img  src={foto}  alt='locomarca'/>
+  </div>
+   
+  
+    <p className='sub'>BORA AGENDAR SEU HORÁRIO?</p>
 
 </section>
 <div  className="servicos" id='servicos'>
@@ -73,16 +78,16 @@ const Homee = () => {
 </div>
 </div>
 <section className='quem-somos' id='quem-somos'>
-    <p  >QUEM SOMOS</p>
-    <pre>Sou Felipe Dias, desenvolvedor Full-Stack Júnior. E esse projeto intgrador, <br />
-         tem o objetivo de dar praticidade ,estreitar a relação entre cliente - empresa  <br />
-          e acesso as informações.  A praticidade de navegar pelas pages, se cadastrar, <br />
-          acessar a page usuário, onde o clinte pode solicitar o seu atendimento e uma listar de<br />
-          agendamento feitos por ele. Esse projeto tem uma otima tecnologia que é React JS,   <br />
-          uma biblioteca JavaScript para criar interfaces de usuárioe e uma boa Api Node JS.<br />
-          A skill usada nesse projeto é o Rect js com seus recursos que seguem o padrão<br />
-          Single Page Applications no Front-End. No Back-End as tecnologias foram Node.js,<br />
-           Express.js, a Orm Prisma, seguindo o padrão MVC (MODEL VIEW CONTROLLER) <br /> </pre>
+    <h2 >QUEM SOMOS</h2>
+    <p>Sou Felipe Dias, desenvolvedor Full-Stack Júnior. E esse projeto intgrador, 
+         tem o objetivo de dar praticidade ,estreitar a relação entre cliente - empresa  
+          e acesso as informações.  A praticidade de navegar pelas pages, se cadastrar, 
+          acessar a page usuário, onde o clinte pode solicitar o seu atendimento e uma listar de
+          agendamento feitos por ele. Esse projeto tem uma otima tecnologia que é React JS,   
+          uma biblioteca JavaScript para criar interfaces de usuárioe e uma boa Api Node JS.
+          A skill usada nesse projeto é o Rect js com seus recursos que seguem o padrão
+          Single Page Applications no Front-End. No Back-End as tecnologias foram Node.js,
+           Express.js, a Orm Prisma, seguindo o padrão MVC (MODEL VIEW CONTROLLER) </p>
     </section>
     </>
   );

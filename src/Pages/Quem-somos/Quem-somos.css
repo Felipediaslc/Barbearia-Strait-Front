@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
 .quem-somos{
     background: linear-gradient( rgba(0,0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(./imag/pexels-nikolaos-dimou-022.jpg);
@@ -8,26 +10,28 @@
     height: 100vh;
   }
   
-  .quem-somos p{
+  .quem-somos h2{
     
     color: white;
    display: flex;
    justify-content: center;
    align-items: flex-start;
    padding: 6rem 0 0 0.5rem;
-   font-family: 'Stardos Stencil', cursive;
+   font-family: 'Finger Paint', cursive;
      font-size: 5rem;
   
   }
   
-  .quem-somos pre{
+  .quem-somos p{
     
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
+    text-align: justify;
     color: white;
     font-size: 1.5rem;
-    padding: 4rem 0 0 10rem;
+    padding: 4rem 22rem 0 6rem;
   }
 
   /* SKILL  */
@@ -102,3 +106,53 @@
   left: 12px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 320px){
+ 
+
+  .quem-somos{
+      background: linear-gradient( rgba(0,0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(./imag/pexels-nikolaos-dimou-022.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 130vh;
+    }
+    
+    .quem-somos h2{
+      
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 0 0 0.5rem;
+      font-family: 'Finger Paint', cursive;
+        font-size: 2.3rem;
+    
+    }
+    
+    .quem-somos p{
+      display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    columns: auto 8rem;
+    padding: 1.2rem 2.5rem 0 2.5rem;
+
+    }
+
+}
+
+
+/*@media screen and (min-width: 321px) and (max-width: 968px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+@media screen and (min-width: 1201px) and (max-width: 1240px) {}
+
+@media screen and (min-width: 1241px) and (max-width: 1920px) {}
+@media screen and (min-width: 1920px) and (max-width: 2560px)  {}*/

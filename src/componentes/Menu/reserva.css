@@ -1,0 +1,479 @@
+/* .header {
+  
+  position: sticky;
+  z-index: 1;
+  top: 0;
+    width: 100vw;
+    height: 20vh;
+    padding: 3.2rem 2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient( rgba(0,0,0,.7),rgba(0,0,0,.7 ));
+    font-size: 1.2rem;
+    margin-top: -3rem;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    transform: translateZ(0px);
+    transition: 0.3s;
+  }
+
+  .header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  aside {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    padding: 20px 20px 20px;
+    background: #000;
+    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+  
+   .open aside {
+    translate: 0;
+  }
+  
+  aside ul  li  {
+    font-family: 'Montserrat', sans-serif;
+    padding: 3rem 1rem 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size:1.5rem;
+  }
+  .logo{
+    margin-top: -0.5rem;
+    width: 5.5vw;
+    margin-left: -0.5rem
+   
+
+}
+.logo-nome{
+  display: flex;
+  margin: 0.8rem 13rem 1rem -3rem;
+  color: #fff;
+  font-family: 'Metal Mania', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.burger {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 82px;
+  height: 82px;
+  font-size: 2rem;
+  color: #ED8C1A;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger i:last-child {
+  display: none;
+}
+
+.open .burger i:first-child {
+  display: none;
+}
+
+ .open .burger i:last-child {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+ .open .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+  
+ .menu {
+    display: flex;
+    list-style: none;
+    gap: 0.4rem;
+  }
+  
+ .menu a {
+  
+  font-family: 'Montserrat', sans-serif;
+    display: block;
+    padding: 1rem;
+    color: white;
+  }
+ .menu .efect a::before {
+  margin-left: auto;
+}
+
+.menu .efect a::after, .menu .efect a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ED8C1A;
+  display: block;
+  transition: 0.5s;
+}
+
+.menu .efect a:hover::after, .menu .efect a:hover::before {
+  width: 100%;
+}*/
+/*
+  :root {
+    --glow-color: hsl( 32, 85%, 52%);
+  }
+
+
+  .button {
+    border-radius: 1rem;
+    background-color: #ED8C1A;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: -0.1rem;
+    margin-right: -1.3rem;
+    padding: 0.4rem 2rem 0.3rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1rem;
+    
+    
+  }
+  
+  .button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  
+
+ 
+    
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1rem);
+    transform: translateY(120%) rotateX(110deg) scale(1, 0.45);
+    background: var(--glow-color);
+    pointer-events: none;
+    animation: border-flicker 2s linear infinite;
+  }
+  .button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: -0.4rem;
+    right: 2rem;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 2rem;
+    
+  }
+  
+  .button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    padding: 0.4rem 2rem 0.3rem 2rem;
+    background: transparent;
+    color:  var(--glow-color);
+  }
+  
+  .button:hover:after {
+    opacity: 1;
+    right: 0.2rem;
+  }
+
+
+
+
+ 
+
+ 
+
+:root {
+  --glow-color: hsl( 32, 85%, 52%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.2rem 1rem 0.3rem 1rem;
+    border: 1px solid  var(--glow-color);
+    border-radius: 1rem;
+    background: none;
+    perspective: 5rem;
+    margin-right: -1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: -0.2em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+   
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+    border-radius: 1rem;
+    font-weight: bold;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  
+    
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+   
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+    
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .glowing-btn{
+      font-size: 1em;
+    }
+  }
+    @media screen and (max-width: 600px){
+    .gallery .image{
+      width: 40%;
+      padding: 4px;
+    }
+  }
+  import foto1 from './imag/imagenserv.jpeg'
+import foto2 from './imag/fund33.jpg'
+import foto3 from './imag/fund09.jpg'
+import foto4 from './imag/fund07.jpg'
+import foto5 from './imag/mage01.jpg'
+import foto6 from './imag/cliente-de-preparação-barbeiro-profissional-para-corte-cabelo-na-barbearia-moda-do-estilo-autocuidado-da-beleza-e-masculina-231458926.jpg'
+<div className='wrapper'>
+      <div className='gallery'>
+        <div className='image'><span><img src={foto1} alt='' /></span></div>
+        <div className='image'><span><img src={foto2} alt='' /></span></div>
+        <div className='image'><span><img src={foto3} alt=''/></span></div>
+        <div className='image'><span><img src={foto4} alt='' /></span></div>
+        <div className='image'><span><img src={foto5} alt='' /></span></div>
+        <div className='image'><span><img src={foto6} alt=''/></span></div>
+      </div>
+    </div>
+    <div className='preview-box'>
+      <div className='details'>
+        <span className='title'> <p className='current-img'></p><p className='total-img'></p></span>
+        <span className='icon fa-solid fa-xmark'>X</span>
+      </div>
+      <div className='image-box'>
+        <div className='slide prev'><i className='fas fa-angle-left'></i></div>
+        <div className='slide next'><i className='fas fa-angle-right'></i></div>
+        <img src='' alt=''/>
+      </div>
+    </div>
+    <div className='shadow'></div>
+*/
