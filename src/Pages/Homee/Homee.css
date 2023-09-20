@@ -56,7 +56,7 @@ z-index: 1;
     z-index: 1000;
     
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 393px){
 
 
 
@@ -77,13 +77,13 @@ z-index: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 5.5rem 0 0  1rem;
+    padding: 8rem 0 0  1.3rem;
     width: 90vw;
     margin: 0 0 0 0.6rem;
    z-index: 1;
    color: white;
    font-family: 'Finger Paint', cursive;
-   font-size: 1.1rem; 
+   font-size: 1.3rem; 
 
 } 
 

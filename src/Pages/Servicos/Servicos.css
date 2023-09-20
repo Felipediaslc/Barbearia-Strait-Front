@@ -100,7 +100,7 @@
     color: #ED8C1A;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 393px){
   
     
        .servicos{
@@ -119,9 +119,9 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 1rem 0 0  0;
+        padding: 1.5rem 0 0  0;
         width: 50vw;
-       margin: -68rem  12.6rem 0.5rem  8rem;
+       margin: -91rem  10rem 9rem  8rem;
        font-family: 'Finger Paint', cursive;
        color: white;
        
@@ -134,7 +134,7 @@
  
     flex-direction: column;
     display: flex;
-    margin-top: -8rem;
+    margin-top: -26rem;
     justify-content: center;
     align-items:space-between;
     color: white;
