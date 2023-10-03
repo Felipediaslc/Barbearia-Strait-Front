@@ -31,6 +31,7 @@
     height: 70vh;
     
     display: flex;
+    
     align-items: center;
     justify-content: space-around;
     color: white;
@@ -38,7 +39,7 @@
 }
 
 .container .card{
-    width: 22vw;
+    width: 25vw;
     height: 60vh;
     padding: 1rem 0 0 0 ;
     text-align: center;
@@ -47,6 +48,7 @@
     border: 0.1px solid none;
     box-shadow: 1rem 1rem 1rem black;
     transition: transform 0.3s;
+   
 }
 
 .container .card:hover{

@@ -49,14 +49,14 @@ const notify = () => toast("Cadastro realizado !");
 
   return  (
 
-    <form className='cadast  ' >
-      <div  className= "flex flex-col items-center justify-center sm:w-60 mb-20 mt-20">
+    <form className='cadast' >
+      <div  className= "flex  w-50 flex-col items-center justify-center   only:sm:w-60 mb-20 mt-20">
       <h1 className="mb-6 text-2xl font-serif tracking-widest font-bold text-zinc-50">Crie sua Conta</h1>
-      <div className="relative z-0 w-full mb-6 group">
+      <div className="relative z-0  mb-6 group">
       <input type="text" name="floating_nome" id="floating_nome"
        value={nomeCompleto} 
         onChange={(event) => setNomeCompleto(event.target.value)} 
-        required className="block py-2.5 px-0 w-full text-sm 
+        required className="block py-2.5 px-0 w-80 text-sm 
        text-white  bg-transparent border-0 border-b-2 border-white appearance-none
        dark:text-white dark:border-white       
         dark:focus:border-amber-500 focus:text-amber-500  focus:outline-none 
@@ -73,12 +73,12 @@ const notify = () => toast("Cadastro realizado !");
   </div>
 
 
-  <div className="relative sm:-mt-3 z-0 w-full mb-6 group">
+  <div className="relative sm:-mt-3 z-0  mb-6 group">
       <input type="email" name="floating_email" id="floating_email"
       value={email}
       onChange={(event) => setEmail(event.target.value)} 
       
-      className="block py-2.5 px-0 w-full text-sm
+      className="block py-2.5 px-0  text-sm w-80
        text-white border-white 
       bg-transparent border-0 border-b-2 appearance-none
        dark:text-white dark:border-white
@@ -91,12 +91,12 @@ const notify = () => toast("Cadastro realizado !");
          peer-focus:-translate-y-6">Email </label>
   </div>
 
- <div className="relative sm:-mt-3 z-0 w-full mb-6 group">
+ <div className="relative  sm:-mt-3 z-0  mb-6 group">
       <input type="password" name="floating_password" id="floating_password" 
       value={senha}
       onChange={(event) => setSenha(event.target.value)} 
     
-      className="block py-2.5 px-0 w-full text-sm text-white 
+      className="block py-2.5 px-0  text-sm text-white w-80
       bg-transparent border-0 border-b-2 border-white appearance-none
        dark:text-white dark:border-white
        dark:focus:border-amber-500 
@@ -108,8 +108,10 @@ const notify = () => toast("Cadastro realizado !");
         peer-focus:text-amber-500 peer-focus:dark:text-amber-500
         peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
   </div>
-  <div className="relative sm:-mt-3 z-0 w-full mb-6 group">
-      <input type="password" name="repeat_password" id="floating_repeat_password" className="block py-2.5 px-0 w-full text-sm text-white 
+
+
+  <div className="relative sm:-mt-3 z-0  mb-6 group">
+      <input type="password" name="repeat_password" id="floating_repeat_password" className="block py-2.5 px-0 w-80 text-sm text-white 
       bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-white
        dark:focus:border-amber-500 
       focus:outline-none focus:ring-0 focus:border-amber-500 peer" placeholder=" " required />
@@ -119,13 +121,16 @@ const notify = () => toast("Cadastro realizado !");
         peer-focus:-translate-y-6">Confirm password</label>
   </div>
  
-  <div className="grid sm:-mt-3 sm:grid-cols-2 sm:gap-1 md:grid-cols-4 md:gap-6"  >
-    <div className="relative   z-0 w-full mb-6 group">
+
+
+
+  <div className="grid   sm:-mt-3 sm:grid-cols-2 sm:gap-1 md:grid-cols-2 md:gap-7"  >
+    <div className="relative   z-0 mb-6 group">
         <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" 
         value={telefone} 
         onChange={(event) => setTelefone(event.target.value)} 
        
-        className="block py-2.5 px-0 w-full
+        className="block py-2.5 px-0 w-36
         sm:w-30 text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-white 
          dark:focus:border-amber-500 focus:outline-none focus:ring-0 focus:border-amber-500 peer" placeholder=" " required />
         <label htmlFor="floating_phone" className="peer-focus:font-medium absolute text-sm text-white dark:text-white 
@@ -133,12 +138,12 @@ const notify = () => toast("Cadastro realizado !");
         peer-focus:dark:text-amber-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
         peer-focus:-translate-y-6">(DDD) Telefone </label>
     </div>
-    <div className="relative   z-0 w-full mb-6 group">
+    <div className="relative   z-0  mb-6 group">
         <input type="text" name="floating_cpf" id="floating_cpf"
         value={cpfUser}
         onChange={(event) => setCpfUser(event.target.value)} 
         
-        className="block py-2.5 px-0 w-full text-sm text-white 
+        className="block py-2.5 w-36 text-sm text-white 
          sm:w-30 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-white
          dark:focus:border-amber-500       focus:outline-none focus:ring-0 focus:border-amber-500 peer" placeholder=" " required />
         <label htmlFor="floating_cpf" className="peer-focus:font-medium absolute text-sm text-white dark:text-white
