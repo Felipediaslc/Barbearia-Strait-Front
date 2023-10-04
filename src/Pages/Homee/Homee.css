@@ -34,7 +34,7 @@
     align-items: flex-end;
     width: 50vw;
     margin-left: 21rem ;
-    padding: 7rem 0 0 8rem ;
+    padding: 7rem 0 0 5rem ;
 z-index: 1;
    color: white;
    font-family: 'Finger Paint', cursive;
@@ -101,9 +101,10 @@ z-index: 1;
         justify-content: center;
         align-items: center;
         width: 90vw;
-        margin-left: 2rem ;
         
-        padding: 0 0 0 0.5rem;
+        margin-left: 1.5rem ;
+        
+        padding: 0 0 0 0;
         z-index: 1000;
        color: white;
        font-family: 'Finger Paint', cursive;
