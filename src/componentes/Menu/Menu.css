@@ -353,7 +353,7 @@ nav {
 	  }
 	}
 	
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width:480px) {
 		header{
 		  position:fixed;
 		  display: flex;
@@ -402,7 +402,7 @@ nav {
 			  font-size: 1.5rem;
 		  }
 	  }
-	  @media screen and (max-width: 393px){
+	  @media screen and (max-width: 480px){
   
 		.button {
 			right: 1rem;

@@ -21,8 +21,9 @@ const Homee = () => {
 
 </section>
 <div  className="servicos" id='servicos'>
-        <div className="titulo">SERVIÇOS</div>
+        
     <div className="container">
+    <div className="serv-title">SERVIÇOS</div>
     <div className="card">
         <div className="card-title">
             <h2>Cabelo</h2>

@@ -11,7 +11,7 @@ function Planos() {
     const [isCadast, setIsCadast] = useState(false);
   return (
     <div className="containerss">
-        <div className="titulo">PLANO PARCERIA</div>
+        <div className="title-plan">PLANO PARCERIA</div>
     <div className="card">
         <div className="card-title">
             <h2>Basic</h2>

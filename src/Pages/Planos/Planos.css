@@ -22,7 +22,7 @@
     color: #fff;
 }
 
-.containerss  .titulo{
+.containerss  .title-plan{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -124,42 +124,43 @@
     font-size: 1rem;
 }
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 480px){
   
     .containerss{
    
     
         width: 100vw;
-        height: 270vh;
+        height: 220vh;
         background: linear-gradient( rgba(0,0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./imag/background.png');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        padding: 12rem 0 0 0 ;
+        padding: 10rem 0 3.1rem 0 ;
         color: white;
         flex-direction: column;
         
     }
-    .containerss  .titulo{
-        position: absolute;
+    .containerss  .title-plan{
+        
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding: 0 0 0  0.5rem;
+        padding:  0 0  0.1rem;
         width:100vw;
-       margin: -137rem  0 0  0;
+       
+       margin: -83.5rem  0 0  0;
        font-family: 'Finger Paint', cursive;
        color: white;
       
-       font-size: 2.3rem; 
+       font-size: 3.2rem; 
      }
     .containerss .card{
-        margin: -12rem 0 5rem 1rem;
+        margin: 0 0 -5rem 1rem;
         width: 90vw;
-        height: 50vh;
-        padding: -5rem 0  -12rem 0;
+        height: 60vh;
+        padding: 1rem 0  -1rem 0;
         text-align: center;
         background: linear-gradient(135deg, rgba(0,0,0,.5), rgba(0,0,0,.5));
         border-radius: 2rem;

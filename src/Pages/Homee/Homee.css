@@ -17,13 +17,13 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    padding: 6rem 5rem 0  4rem;
+    padding: 7rem 5rem 0  4rem;
     width: 53vw;
     margin-left: 1rem ;
    z-index: 1;
    color: white;
    font-family: 'Finger Paint', cursive;
-   font-size: 2.3rem; 
+   font-size: 2.6rem; 
    
 } 
 .sub {
@@ -56,73 +56,58 @@ z-index: 1;
     z-index: 1000;
     
 }
-@media screen and (max-width: 393px){
 
+@media screen and (max-width: 480px){
 
-
-
-
-
-.home{
-    background: linear-gradient( rgba(0,0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./imag/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    .home{
+        background: linear-gradient( rgba(0,0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./imag/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
     
-}
+    .title-logs{
+       
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        padding: 8rem 0 0  0.5rem;
+        width: 90vw;
+        margin-left: 1rem ;
+       z-index: 1;
+       color: white;
+       font-family: 'Finger Paint', cursive;
+       font-size: 1.5rem; 
+       
+    } 
 
-.title-logs{
+    .imagem-logo{
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 0 0 0;
+        margin-left: 7.5rem;
+        width: 50vw;
+        height: 55vh;
+        z-index: 1;
+        
+    }
+    .sub {
    
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 8rem 0 0  1.3rem;
-    width: 90vw;
-    margin: 0 0 0 0.6rem;
-   z-index: 1;
-   color: white;
-   font-family: 'Finger Paint', cursive;
-   font-size: 1.3rem; 
-
-} 
-
-
-
-
-.imagem-logo{   
-    display:flex;
-    justify-content: center;
-   
-    margin:1rem 0 0 4.7rem; 
-   
-     width:53vw;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-left: 2rem ;
+        
+        padding: 0 0 0 0.5rem;
+        z-index: 1000;
+       color: white;
+       font-family: 'Finger Paint', cursive;
+       font-size: 1.5rem; 
+       
+    }
 }
-.sub {
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width:86vw;
-    margin-left: 1.6rem ;
-
-    padding: 6rem 0 0 0 ;
-z-index: 1000;
-   color: white;
-   font-family: 'Finger Paint', cursive;
-   font-size: 1rem; 
-}
-}
-
-
-/*@media screen and (min-width: 321px) and (max-width: 968px) {}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {}
-
-@media screen and (min-width: 1201px) and (max-width: 1240px) {}
-
-@media screen and (min-width: 1241px) and (max-width: 1920px) {}
-@media screen and (min-width: 1920px) and (max-width: 2560px)  {}*/

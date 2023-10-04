@@ -3,8 +3,9 @@ import './Servicos.css';
 function Servicos() {
   return (
     <div  className="servicos"  >
-        <div className="titulo">SERVIÇOS</div>
+        
     <div className="container">
+    <div className="serv-title">SERVIÇOS</div>
     <div className="card">
         <div className="card-title">
             <h2>Cabelo</h2>
