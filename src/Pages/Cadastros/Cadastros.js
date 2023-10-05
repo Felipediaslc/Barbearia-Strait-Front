@@ -126,7 +126,7 @@ const notify = () => toast("Cadastro realizado !");
 
   <div className="grid  sm:px-1 sm:-mt-3 sm:grid-rows-2 sm:grid-cols-2 sm:gap-1 md:grid-cols-2 md:gap-7"  >
     <div className="relative sm:-ml-11   z-0 mb-6 group">
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" 
+        <input type="tel"  name="floating_phone" id="floating_phone" 
         value={telefone} 
         onChange={(event) => setTelefone(event.target.value)} 
        
