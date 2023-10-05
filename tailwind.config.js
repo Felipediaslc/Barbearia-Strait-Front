@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
+   
     extend: {
+      fontFamily: {
+        sans: ['Balthazar'],
+       
+      },
       screens: {
         'sm': { 'max': '480px'},
         // => @media (min-width: 640px) { ... }

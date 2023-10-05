@@ -51,7 +51,7 @@ const notify = () => toast("Cadastro realizado !");
 
     <form className='cadast' >
       <div  className= "flex  w-50 flex-col items-center justify-center   only:sm:w-60 mb-20 mt-20">
-      <h1 className="mb-6 text-2xl font-serif tracking-widest font-bold text-zinc-50">Crie sua Conta</h1>
+      <h1 className="mb-6 text-2xl font-sans tracking-widest font-bold text-zinc-50">CRIE SUA CONTA</h1>
       <div className="relative z-0  mb-6 group">
       <input type="text" name="floating_nome" id="floating_nome"
        value={nomeCompleto} 

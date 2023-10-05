@@ -47,7 +47,7 @@ const Login = () => {
      
        
           <div  className= "flex flex-col items-center justify-center  mb-20 mt-12">
-          <h1 className="mb-6 text-2xl font-serif tracking-widest font-bold text-zinc-50">Login</h1>
+          <h1 className="mb-6 text-2xl font-sans tracking-widest font-bold text-zinc-50">LOGIN</h1>
            <div className="flex flex-col gap-3 mb-3 mt-2 w-96 sm:ml-20 sm:-mr-10 sm:px-3 ">
           <Input id="email"  value={email}
             onChange={(e) => setEmail(e.target.value)} 
