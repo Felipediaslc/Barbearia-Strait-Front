@@ -1,11 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx,png,jpg}"],
   theme: {
    
     extend: {
+    
+      colors: {
+     
+        amarelo: '#ED8C1A',
+       
+      },
+      backgroundImage: {
+        'corp-pattern': "url('/src/Pages/Login/imag/background.png')",
+        'quem-pattern': "url('/src/Pages/Quem-somos/imag/pexels-nikolaos-dimou-022.jpg')",
+        'logo-home': "url('/src/Pages/Homee/imag/logs01.png')",
+        'logo-galeria': "url('/src/Pages/Servicos/imag/servico.png')",
+        'logo-servico': "url('/src/Pages/Servicos/imag/11-barbearias-em-goiania-com-estilo-vintage-que-voce-precisa-conhecer.jpeg')",
+      },
+
       fontFamily: {
-        sans: ['Balthazar'],
+        'sans': ['Balthazar'],
+       'saira': ['Saira Semi Condensed'],
        
       },
       screens: {

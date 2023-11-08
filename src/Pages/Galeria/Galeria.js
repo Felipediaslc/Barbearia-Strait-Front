@@ -1,4 +1,4 @@
- import './Galeria.css';
+
  import { Carousel } from 'react-responsive-carousel';
  import "react-responsive-carousel/lib/styles/carousel.min.css";
 import foto1 from './imag/imagenserv.jpeg'
@@ -10,10 +10,12 @@ import foto6 from './imag/cliente-de-preparação-barbeiro-profissional-para-cor
 
 function Galeria() {
   return (
-    <section className='galeria' id='galeria'>
-    <h2 className="titulo-gal" >GALERIA</h2>
+    <section className='sm:w-[93vw] sm:h-[100vh] sm:px-0  w-screen h-screen bg-logo-galeria   bg-no-repeat bg-cover' id='galeria'>
+       <div className=' sm:w-[93vw] sm:h-[100vh] sm:px-0   w-screen h-screen	 backdrop-brightness-[0.6] flex 
+      justify-star items-center z-20  flex-col bg-none'>
+    <h2 className="text-white z-30 flex justify-center items-start pt-20 pr-0 pb-0 mr-0    text-[3.5rem]  font-sans " >GALERIA</h2>
     
-    <Carousel  className= "galery-barb">
+    <Carousel  className= "  mt-[0.2rem] mr-0 -mb-[1rem] -ml-[0.5rem] sm:ml-5  sm:w-screen w-[60vw] opacity-[1000] z-50">
                 <div>
                     <img src={foto1} alt=''  />
                     
@@ -39,8 +41,8 @@ function Galeria() {
                     
                 </div>
             </Carousel>
-
-
+            </div>
+            
   </section>
     
 

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import { Button} from "../../componentes/Button/Button"
-import './Cadastros.css';
+
 
 
 const Cadastro = ( ) => {
@@ -49,9 +49,11 @@ const notify = () => toast("Cadastro realizado !");
 
   return  (
 
-    <form className='cadast' >
-      <div  className= "flex  w-50 flex-col items-center justify-center   only:sm:w-60 mb-20 mt-20">
-      <h1 className="mb-6 text-2xl font-sans tracking-widest font-bold text-zinc-50">CRIE SUA CONTA</h1>
+    <form className='w-screen h-screen	 z-0 flex justify-center 
+     bg-corp-pattern   bg-no-repeat bg-cover items-center' >
+      <div className="w-screen h-screen	 z-10 flex justify-center items-center backdrop-brightness-[0.4] bg-none">
+      <div  className= "flex  w-50 flex-col items-center justify-center bg-none   only:sm:w-60 mb-20 mt-20">
+      <h1 className="mb-6 text-2xl font-sans   text-white">CRIE SUA CONTA</h1>
       <div className="relative z-0  mb-6 group">
       <input type="text" name="floating_nome" id="floating_nome"
        value={nomeCompleto} 
@@ -59,15 +61,15 @@ const notify = () => toast("Cadastro realizado !");
         required className="block py-2.5 px-0 w-80 text-sm 
        text-white  bg-transparent border-0 border-b-2 border-white appearance-none
        dark:text-white dark:border-white       
-        dark:focus:border-amber-500 focus:text-amber-500  focus:outline-none 
-        focus:ring-0 focus:border-amber-500 peer" placeholder=" "  />
+        dark:focus:border-amarelo focus:text-amarelo  focus:outline-none 
+        focus:ring-0 focus:border-amarelo peer" placeholder=" "  />
 
       <label htmlFor="floating_nome" className="peer-focus:font-medium absolute text-sm
         text-white  
           dark:text-white 
       duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] 
 
-      peer-focus:left-0 peer-focus:text-amber-500      peer-focus:dark:text-amber-500 peer-placeholder-shown:scale-100
+      peer-focus:left-0 peer-focus:text-amarelo      peer-focus:dark:text-amarelo peer-placeholder-shown:scale-100
        peer-placeholder-shown:translate-y-0 peer-focus:scale-75 
       peer-focus:-translate-y-6">Nome Completo</label>
   </div>
@@ -82,7 +84,7 @@ const notify = () => toast("Cadastro realizado !");
        text-white border-white 
       bg-transparent border-0 border-b-2 appearance-none
        dark:text-white dark:border-white
-        dark:focus:border-amber-500
+        dark:focus:border-amarelo
        focus:outline-none focus:ring-0 focus:text-amber-500 focus:border-amber-500 peer" placeholder=" " required />
       <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-white
        dark:text-white
@@ -155,6 +157,7 @@ const notify = () => toast("Cadastro realizado !");
   <div className="flex sm:mt-14 absolute items-end justify-center group -mb-80 mt-40">
           <Button type="button"  id="Cadastrar" onClick={(e) => cadastrarUsuario(e)} >Cadastrar</Button>
           </div>
+  </div>
   </div>
   </form>
    
