@@ -2,9 +2,9 @@
 
 function Servicos() {
   return (
-    <div  className="sm:w-[93vw] sm:px-0 sm:h-[170vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen z-0 flex justify-center  bg-logo-servico   bg-no-repeat bg-cover items-center"  >
+    <div  className="sm:w-screen sm:px-0 sm:h-[170vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen z-0 flex justify-center  bg-logo-servico   bg-no-repeat bg-cover items-center"  >
         
-    <div className="sm:w-[93vw] sm:h-[170vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen backdrop-brightness-[0.7]	z-10 flex  flex-col  justify-center items-center bg-none">
+    <div className="sm:w-screen sm:h-[170vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen backdrop-brightness-[0.7]	z-10 flex  flex-col  justify-center items-center bg-none">
    
     <h2 className="  sm:flex sm:justify-center sm:items-start sm:pl-[10.5rem] sm:pr-0 sm:-mt-[3.5rem]
     flex justify-center items-start  pt-0 pr-0 pb-0 pl-12 w-[50vw]

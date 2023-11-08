@@ -10,8 +10,8 @@ import foto6 from './imag/cliente-de-preparação-barbeiro-profissional-para-cor
 
 function Galeria() {
   return (
-    <section className='sm:w-[93vw] sm:h-[100vh] sm:px-0  w-screen h-screen bg-logo-galeria   bg-no-repeat bg-cover' id='galeria'>
-       <div className=' sm:w-[93vw] sm:h-[100vh] sm:px-0   w-screen h-screen	 backdrop-brightness-[0.6] flex 
+    <section className='sm:w-screen sm:h-[100vh] sm:px-0  w-screen h-screen bg-logo-galeria   bg-no-repeat bg-cover' id='galeria'>
+       <div className=' sm:w-screen sm:h-[100vh] sm:px-0   w-screen h-screen	 backdrop-brightness-[0.6] flex 
       justify-star items-center z-20  flex-col bg-none'>
     <h2 className="text-white z-30 flex justify-center items-start pt-20 pr-0 pb-0 mr-0    text-[3.5rem]  font-sans " >GALERIA</h2>
     

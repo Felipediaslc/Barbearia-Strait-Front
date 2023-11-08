@@ -9,9 +9,9 @@ import foto from './imag/logs01.png'
 const Homee = () => {
   return (
     <>
-    <section  className='sm:w-[93vw] sm:h-[105vh] w-screen h-screen	 z-10 flex 
+    <section  className='sm:w-screen sm:h-[105vh] w-screen h-screen	 z-10 flex 
       justify-start  bg-corp-pattern   flex-col flex-wrap bg-no-repeat bg-cover items-center'   id='home' >
-    <div className=' sm:w-[93vw] sm:h-[105vh] w-screen h-screen	 backdrop-brightness-[0.4] flex 
+    <div className=' sm:w-screen sm:h-[105vh] w-screen h-screen	 backdrop-brightness-[0.4] flex 
       justify-star items-center z-20  flex-col bg-none'>
     <p className='sm:text-[1.5rem] sm:h-[20vh] sm:w-[90vw] sm:p-2 sm:bg-none sm:mt-28 sm:ml-1 flex z-40  justify-start items-start pt-24 pr-72 pb-0 pl-0 -mb-1 -ml-96 w-[63vw]  text-white   font-sans text-[2.7rem]' >SEU CABELO E BARBA MOLDURAM SEU ROSTO, <br />
    CUIDE BEM DELES E APAREÇA!</p> 
@@ -29,9 +29,9 @@ const Homee = () => {
 
 
 
-<div  className="sm:w-[93vw] sm:px-0 sm:h-[190vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen z-0 flex justify-center  bg-logo-servico   bg-no-repeat bg-cover items-center"  >
+<div  className="sm:w-screen sm:px-0 sm:h-[190vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen z-0 flex justify-center  bg-logo-servico   bg-no-repeat bg-cover items-center"  >
         
-        <div className="sm:w-[93vw] sm:h-[190vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen backdrop-brightness-[0.7]	z-10 flex  flex-col  justify-center items-center bg-none">
+        <div className="sm:w-screen sm:h-[190vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen backdrop-brightness-[0.7]	z-10 flex  flex-col  justify-center items-center bg-none">
        
         <h2 className="  sm:flex sm:justify-center sm:items-start sm:pl-[10.5rem] sm:pr-0 sm:-mt-[3.5rem]
         flex justify-center items-start  pt-0 pr-0 pb-0 pl-12 w-[50vw]
@@ -104,9 +104,9 @@ const Homee = () => {
         </div>
     </div>
     </div>
-<section className=' sm:w-[93vw] sm:h-[116vh] w-screen h-screen	 z-0 flex 
+<section className=' sm:w-screen sm:h-[116vh] w-screen h-screen	 z-0 flex 
       justify-center  bg-quem-pattern   bg-no-repeat bg-cover items-center' id='quem-somos'>
-        <div className="sm:w-[93vw] sm:h-[116vh] w-screen h-screen flex-col	backdrop-brightness-[0.4] z-10 flex justify-center items-center bg-none">
+        <div className="sm:w-screen sm:h-[116vh] w-screen h-screen flex-col	backdrop-brightness-[0.4] z-10 flex justify-center items-center bg-none">
     <h2 className="sm:-mt-[10rem] sm:pr-4 sm:pb-0 sm:pl-4 sm:text-4xl flex  justify-center items-start font-sans text-zinc-50 pr-16 pl-12 pb-10  pt-20 text-7xl">QUEM SOMOS</h2>
     <p className=" sm:text-lg sm:pt-2 sm:pr-4 sm:pb-0 sm:-mb-[7rem]  sm:pl-4  flex justify-center items-start text-justify text-2xl pr-20 pl-20 pb-16  pt-10 text-zinc-50">Sou Felipe Dias, desenvolvedor Full-Stack Júnior. E esse projeto intgrador, 
          tem o objetivo de dar praticidade ,estreitar a relação entre cliente - empresa  

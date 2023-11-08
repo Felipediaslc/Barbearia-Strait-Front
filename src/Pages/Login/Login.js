@@ -44,9 +44,9 @@ const Login = () => {
    };
 
   return (
-    <form className='sm:w-full w-screen h-screen	 z-0 flex justify-center 
+    <form className='sm:w-screen w-screen h-screen	 z-0 flex justify-center 
     bg-corp-pattern   bg-no-repeat bg-cover items-center'>
-       <div className="sm:w-full  w-screen h-screen	 z-10 flex justify-center items-center backdrop-brightness-[0.4] bg-none">
+       <div className="sm:w-screen  w-screen h-screen	 z-10 flex justify-center items-center backdrop-brightness-[0.4] bg-none">
       
           <div  className= "  flex flex-col z-20 items-center justify-center sm:mt-5  mb-20 mt-12">
           <h1 className="mb-6 text-2xl tracking-tighter  font-sans text-white">LOGIN</h1>
