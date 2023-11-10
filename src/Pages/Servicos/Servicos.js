@@ -6,11 +6,11 @@ function Servicos() {
         
     <div className="sm:w-screen sm:h-[170vh] sm:flex sm:flex-col sm:justify-center sm:items-baseline w-screen h-screen backdrop-brightness-[0.7]	z-10 flex  flex-col  justify-center items-center bg-none">
    
-    <h2 className="  sm:flex sm:justify-center sm:items-start sm:pl-[10.5rem] sm:pr-0 sm:-mt-[3.5rem]
+    <h2 className="  sm:flex sm:justify-center sm:items-start sm:pl-[12rem] sm:pr-0 sm:-mt-[3.5rem]
     flex justify-center items-start  pt-0 pr-0 pb-0 pl-12 w-[50vw]
     mt-[1rem] mr-7 -mb-2 -ml-4 font-sans text-white text-[3.5rem] sm:text-[3.5rem]">SERVIÇOS</h2>
 
-     <div className=" sm:pl-[2rem] sm:pr-0 sm:-mb-[7rem] sm:flex sm:flex-col sm:justify-center 
+     <div className=" sm:pl-[2.7rem] sm:pr-0 sm:-mb-[7rem] sm:flex sm:flex-col sm:justify-center 
      sm:items-baseline flex justify-center items-center mt-5 text-white ">
 
     

@@ -49,8 +49,8 @@ const Login = () => {
        <div className="sm:w-screen  w-screen h-screen	 z-10 flex justify-center items-center backdrop-brightness-[0.4] bg-none">
       
           <div  className= "  flex flex-col z-20 items-center justify-center sm:mt-5  mb-20 mt-12">
-          <h1 className="mb-6 text-2xl tracking-tighter  font-sans text-white">LOGIN</h1>
-           <div className="flex flex-col gap-3 mb-3 mt-2 w-96 sm:w-[93vw]  bg-none sm:border-none sm:pl-12 sm:px-3 ">
+          <h1 className="mb-6 text-2xl tracking-tighter sm:mr-2 font-sans text-white">LOGIN</h1>
+           <div className="flex flex-col gap-3 mb-3 mt-2 w-96 sm:w-screen  bg-none sm:border-none sm:pl-[4.8rem]  ">
           <Input id="email"  value={email}
             onChange={(e) => setEmail(e.target.value)} 
             type="email" placeholder="E-mail" required={true} />
@@ -61,7 +61,7 @@ const Login = () => {
 
            </div>
 
-           <div className="flex absolute z-20 cursor-pointer sm:tracking-widest  sm:mr-20 sm:-ml-10
+           <div className="flex absolute z-20 cursor-pointer sm:tracking-widest  sm:mr-20 sm:-ml-4
            justify-start mt-40 sm:mt-36  mr-80 ml-20  text-amarelo " >
             <span onClick={() => setIsModalVisible(true)}>
               Esqueci a senha
