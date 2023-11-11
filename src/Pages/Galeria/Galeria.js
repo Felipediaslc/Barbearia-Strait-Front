@@ -15,7 +15,7 @@ function Galeria() {
       justify-star items-center z-20  flex-col bg-none'>
     <h2 className="text-white z-30 flex justify-center items-start pt-20 pr-0 pb-0 mr-0    text-[3.5rem]  font-sans " >GALERIA</h2>
     
-    <Carousel  className= "  mt-[0.2rem] mr-0 -mb-[1rem] -ml-[0.5rem] sm:ml-2  sm:w-screen w-[60vw] opacity-[1000] z-50">
+    <Carousel  className= "  -mt-[0.5rem] mr-0 mb-[0.2rem] ml-[0.2rem] sm:ml-0  sm:w-[97vw] w-[39vw] opacity-[1000] z-50">
                 <div>
                     <img src={foto1} alt=''  />
                     

@@ -17,13 +17,13 @@ function Menu() {
     <header>
     <img    className='logo' src={logo}  alt='locomarca'/>
     <nav ref={navRef}>
-                <Link className='efect' to="/home">Home</Link>
-                <Link className='efect' to="/servicos">Serviços</Link>
-                <Link className='efect' to="/quemsomos" >Quem Somos</Link>
-                <Link className='efect' to="/galeria">Galeria</Link>
-                <Link className='efect' to="/planos">Plano Parceria</Link>
-                <Link to="/cadastros"><button className='glowing-btn'><span className='glowing-txt'>Cadas<span className='faulty-letter'>tre</span>-se</span></button></Link>
-               <Link to="/login" ><button className=' button'><span>Login</span></button> </Link>
+                <Link className='efect' onClick={showNavbar} to="/home">Home</Link>
+                <Link className='efect' onClick={showNavbar}  to="/servicos">Serviços</Link>
+                <Link className='efect' onClick={showNavbar} to="/quemsomos" >Quem Somos</Link>
+                <Link className='efect' onClick={showNavbar} to="/galeria">Galeria</Link>
+                <Link className='efect' onClick={showNavbar} to="/planos">Plano Parceria</Link>
+                <Link  to="/cadastros"><button className='glowing-btn' onClick={showNavbar} ><span className='glowing-txt'>Cadas<span className='faulty-letter'>tre</span>-se</span></button></Link>
+               <Link to="/login" ><button className=' button' onClick={showNavbar}><span>Login</span></button> </Link>
       <button
         className="nav-btn nav-close-btn"
         onClick={showNavbar}>
